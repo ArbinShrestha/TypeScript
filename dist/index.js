@@ -32,4 +32,34 @@ var Direction2;
     Direction2["Left"] = "Left";
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
-console.log(Direction2.Left);
+const user = {
+    id: 1,
+    name: 'John',
+};
+// Type Assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+// Void
+function log(message) {
+    console.log(message);
+}
+const user1 = {
+    id: 1,
+    name: 'John',
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const brad = new Person(1, 'arbin');
+console.log(brad);
