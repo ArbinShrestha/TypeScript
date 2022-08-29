@@ -40,11 +40,10 @@ const user = {
 let cid = 1;
 // let customerId = <number>cid
 let customerId = cid;
-// Functions
+// Function
 function addNum(x, y) {
     return x + y;
 }
-// Void
 function log(message) {
     console.log(message);
 }
@@ -60,6 +59,16 @@ class Person {
         this.id = id;
         this.name = name;
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
-const brad = new Person(1, 'arbin');
-console.log(brad);
+const arbin = new Person(1, 'arbin');
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(1, 'aasdf', 'SD');
+console.log(emp.name);
